@@ -1,5 +1,5 @@
 # Google Python Licencing 🔒
-Neste pequeno exemplo criamos basicamente um SaS utilizando apis do google
+Neste pequeno exemplo criamos basicamente um SaS utilizando apis do google, gerenciando licenciamento utilizando o google sheet
 
 ## Funcionalidades 🧩
 
