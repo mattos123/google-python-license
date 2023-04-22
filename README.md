@@ -1,13 +1,13 @@
-# Google Python Licencing
+# Google Python Licencing 🔒
 Neste pequeno exemplo criamos basicamente um SaS utilizando apis do google
 
-## Funcionalidades
+## Funcionalidades 🧩
 
 - Validação de licenciamento via API
 - Geração de licenças automaticas
 - Gerenciemnto de licenças
 
-## Dependências
+## Dependências 📂
 
 É necessário ter uma conta no ambiente google cloud e acesso as devidas apis utilizadas, e ter instalado no seu ambiente as seguinte libs
 
@@ -18,7 +18,7 @@ Neste pequeno exemplo criamos basicamente um SaS utilizando apis do google
 ```
 
 
-## Configurando o google cloud
+## Configurando o google cloud ☁️
 
 Crie uma conta no ambiente cloud da google, e ative as respectivas apis que usamos em nosso codigo python
 <br />
@@ -64,10 +64,14 @@ Defina o tipo de chave como json, e clique em criar
 Após criar a chave, a mesma sera baixada para seu computador, salve este arquivo como backup
 ![image](https://user-images.githubusercontent.com/21156270/233755819-7b67bbd7-0ab8-4a34-86d9-0baf5339d3e1.png)
 <br />
-Crie uma copia de sua chave, na mesma pasta onde temos o nosso codigo em python, e renomeio o arquivos para "credenciais"
-![image](https://user-images.githubusercontent.com/21156270/233756240-048bc1b4-d005-49c7-bd76-0917b31aef8f.png)
+Abra o arquivo json criado com suas chaves, e codifique o conteudo dele em base64 seguindo o seguinte exemplo, utlizo o [Base64Encode](https://www.base64encode.org/)
+![image](https://user-images.githubusercontent.com/21156270/233795028-1ffa329d-504a-487d-b97e-334bee0b2bc8.png)
 <br />
-## Configurando nossa planilha
+Copie o conteudo codificado em base64 e cole dentro do g_sheet.py
+<br />
+![image](https://user-images.githubusercontent.com/21156270/233795077-776d726a-85a8-4dcc-a3c2-980cf71ceece.png)
+<br />
+## Configurando nossa planilha 📃
 Com o ambiente cloud devidamente configurado, e chave criada, iremos agora criar a planilha no google sheets.
 ![image](https://user-images.githubusercontent.com/21156270/233756970-ed6a252b-7407-4e76-96e6-374612361301.png)
 <br />
@@ -117,7 +121,7 @@ Planilha configurada, significa que ao preencher os campos marcados em vermelho 
 ![image](https://user-images.githubusercontent.com/21156270/233764148-db6dfeb0-073c-4b69-b381-b9dd9001f4e6.png)
 <br /> 
 
-## Conclusão
+## Compilando 🗜️
 Agora iremos compilar nosso executavel
 Abra seu arquivo interface.py, e envie o seguinte comando no seu terminal
 ```bash
@@ -133,7 +137,7 @@ Se tudo correu corretamente com o seu projeto, ao executar o programa compilado,
 
 
 
-## Conclusão
+## Conclusão 🗝️
 Ao inserir o codigo de licença gerado automaticamente pela planilha no software, o mesmo ira buscar a licença inserida na interface, em todas as linhas da coluna 2(b) planilha e se encontrar a licença , ela estiver com tempo > 0, e ativa < 1 ele ira ativar a licença e comecara a descontar o tempo a cada 24h a partir da ativacao
 <br/>
 ![image](https://user-images.githubusercontent.com/21156270/233764395-83bc80d1-2e2d-406c-8d79-2b031185d3d9.png)
