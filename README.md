@@ -1,4 +1,4 @@
-# google-python-license
+# Google Python Licencing
 
 ## Funcionalidades
 
@@ -6,6 +6,16 @@
 - Preview em tempo real
 - Modo tela cheia
 - Multiplataforma
+
+## Funcionalidades
+
+- Temas dark e light
+- Preview em tempo real
+- Modo tela cheia
+- Multiplataforma
+
+
+
 Utilizaremos o google sheets para criar um sistema de validação de licenciamento utilizando python e apis do google drive e google sheets
 <br />
 Crie uma conta no ambiente cloud da google, e ative as respectivas apis que usamos em nosso codigo python
