@@ -14,6 +14,7 @@ Neste pequeno exemplo criamos basicamente um SaS utilizando apis do google
 ```bash
   pip install gspread
   pip install oauth2client
+  pip install pyinstaller
 ```
 
 
@@ -115,6 +116,23 @@ Planilha configurada, significa que ao preencher os campos marcados em vermelho 
 <br />
 ![image](https://user-images.githubusercontent.com/21156270/233764148-db6dfeb0-073c-4b69-b381-b9dd9001f4e6.png)
 <br /> 
+
+## Conclusão
+Agora iremos compilar nosso executavel
+Abra seu arquivo interface.py, e envie o seguinte comando no seu terminal
+```bash
+  pyinstaller --noconsole --onefile interface.py
+```
+![image](https://user-images.githubusercontent.com/21156270/233788077-15e80c96-8a03-451e-8273-776d81ee885f.png)
+Aguarde o compilador empacotar as depedencias e sua interface em um unico arquivo executavel(note que você pode compilar para outras plataformas)
+![image](https://user-images.githubusercontent.com/21156270/233788165-bf30f5fb-0066-4512-94ce-694b7350d9b6.png)
+Concluida a compilação, seu arquivo .exe ira fica dentro da pasta dist
+![image](https://user-images.githubusercontent.com/21156270/233788226-bc91774a-bb62-43bb-9613-93562ac59ffa.png)
+Se tudo correu corretamente com o seu projeto, ao executar o programa compilado, ele será exibido desta forma
+![image](https://user-images.githubusercontent.com/21156270/233788308-a97d5ca7-a186-485e-b4c3-494d29c0c96c.png)
+
+
+
 ## Conclusão
 Ao inserir o codigo de licença gerado automaticamente pela planilha no software, o mesmo ira buscar a licença inserida na interface, em todas as linhas da coluna 2(b) planilha e se encontrar a licença , ela estiver com tempo > 0, e ativa < 1 ele ira ativar a licença e comecara a descontar o tempo a cada 24h a partir da ativacao
 <br/>
