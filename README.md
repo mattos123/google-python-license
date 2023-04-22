@@ -115,6 +115,7 @@ Planilha configurada, significa que ao preencher os campos marcados em vermelho 
 <br />
 ![image](https://user-images.githubusercontent.com/21156270/233764148-db6dfeb0-073c-4b69-b381-b9dd9001f4e6.png)
 <br /> 
+## Conclusão
 Ao inserir o codigo de licença gerado automaticamente pela planilha no software, o mesmo ira buscar a licença inserida na interface, em todas as linhas da coluna 2(b) planilha e se encontrar a licença , ela estiver com tempo > 0, e ativa < 1 ele ira ativar a licença e comecara a descontar o tempo a cada 24h a partir da ativacao
 <br/>
 ![image](https://user-images.githubusercontent.com/21156270/233764395-83bc80d1-2e2d-406c-8d79-2b031185d3d9.png)
