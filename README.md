@@ -1,23 +1,22 @@
 # Google Python Licencing
+Neste pequeno exemplo criamos basicamente um SaS utilizando apis do google
 
 ## Funcionalidades
 
-- Temas dark e light
-- Preview em tempo real
-- Modo tela cheia
-- Multiplataforma
+- Validação de licenciamento via API
+- Geração de licenças automaticas
+- Gerenciemnto de licenças
 
-## Funcionalidades
+## Dependências
 
-- Temas dark e light
-- Preview em tempo real
-- Modo tela cheia
-- Multiplataforma
-
+```bash
+  pip install gspread
+  pip install oauth2client
+```
 
 
-Utilizaremos o google sheets para criar um sistema de validação de licenciamento utilizando python e apis do google drive e google sheets
-<br />
+
+
 Crie uma conta no ambiente cloud da google, e ative as respectivas apis que usamos em nosso codigo python
 <br />
 Busque pela api do google drive:
