@@ -9,13 +9,15 @@ Neste pequeno exemplo criamos basicamente um SaS utilizando apis do google
 
 ## Dependências
 
+É necessário ter uma conta no ambiente google cloud e acesso as devidas apis utilizadas, e ter instalado no seu ambiente as seguinte libs
+
 ```bash
   pip install gspread
   pip install oauth2client
 ```
 
 
-
+## Configurando o google cloud
 
 Crie uma conta no ambiente cloud da google, e ative as respectivas apis que usamos em nosso codigo python
 <br />
@@ -64,6 +66,7 @@ Após criar a chave, a mesma sera baixada para seu computador, salve este arquiv
 Crie uma copia de sua chave, na mesma pasta onde temos o nosso codigo em python, e renomeio o arquivos para "credenciais"
 ![image](https://user-images.githubusercontent.com/21156270/233756240-048bc1b4-d005-49c7-bd76-0917b31aef8f.png)
 <br />
+## Configurando nossa planilha
 Com o ambiente cloud devidamente configurado, e chave criada, iremos agora criar a planilha no google sheets.
 ![image](https://user-images.githubusercontent.com/21156270/233756970-ed6a252b-7407-4e76-96e6-374612361301.png)
 <br />
